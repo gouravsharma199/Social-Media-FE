@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import axios from 'axios';
 const Login = () => {
 
-    const[email,setEmail] = useState(" ");
-    const[password,setPassword] = useState("");
+    const[emailId,setEmailId] = useState("Gourav@gmail.com");
+    const[password,setPassword] = useState("Gourav@321");
 
     const handleLogin = async()=>{
         try{
             const res = await axios.post("http://localhost:222/login",{
-                emailId: "Gourav@gmail.com",
-                password: "Gourav@321"
+                emailId,
+                password
             })
 
         }catch(err){
@@ -29,8 +29,8 @@ const Login = () => {
                     <fieldset className="fieldset">
 
                         <label className="label">Email</label>
-                        <input type="email" value={email} className="input" 
-                        placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
+                        <input type="email" value={emailId} className="input" 
+                        placeholder="Email" onChange={(e)=>setEmailId(e.target.value)} />
 
                         <label className="label">Password</label>
                         <input type="password" className="input" value={password} 
@@ -39,7 +39,7 @@ const Login = () => {
                         <div><a className="link link-hover">Forgot password?</a></div>
 
 
-                    <button className="btn btn-neutral mt-4">Login</button>
+                    <button className="btn btn-neutral mt-4" onClick={handleLogin}>Login</button>
                     </fieldset>
                 </div>
             </div>
