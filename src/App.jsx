@@ -5,7 +5,7 @@ import Profile from "./Profile";
 import Login from "./Login"
 import Body from "./Body";
 import appStore from "./utils/appStore";
-import {provider} from "react-redux";
+import {Provider} from "react-redux";
 
 
 
@@ -13,7 +13,7 @@ import {provider} from "react-redux";
 function App() {
   return (
   <>
-    <provider store={appStore}>
+    <Provider store={appStore}>
       
       <BrowserRouter basename = "/">
         <Routes>
@@ -24,7 +24,7 @@ function App() {
           
         </Routes>
       </BrowserRouter>
-    </provider>
+    </Provider>
     
   </>
     

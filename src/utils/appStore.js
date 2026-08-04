@@ -1,6 +1,6 @@
-import {configSrore} from "@reduxjs/tookit";
+import {configureStore} from "@reduxjs/toolkit";
 
-const appStore = configSrore({
+const appStore = configureStore({
     reducer:{}
 })
 
