@@ -1,9 +1,9 @@
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import React from "react";
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Profile from "./components/Profile";
 import Login from "./components/Login"
-import Body from "./Body";
+import Body from "./components/Body";
 import appStore from "./utils/appStore";
 import {Provider} from "react-redux";
 import Feed from "./components/Feed";

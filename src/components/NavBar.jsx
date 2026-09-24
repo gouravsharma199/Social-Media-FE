@@ -1,5 +1,5 @@
-import React from 'react'
-import myImage from "./assets/gourav.jpg";
+
+
 import { useSelector } from 'react-redux';
 const NavBar = () => {
 
